@@ -1,0 +1,1848 @@
+2023-12-22 08:41:35 [::1][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', 'root', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_todo')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%todo}}', 'schema', false)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%todo}}')
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\data\ActiveDataProvider.php(182): yii\db\ActiveRecord->attributes()
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Component.php(180): yii\data\ActiveDataProvider->setSort(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set('sort', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\models\TodoSearch.php(40): yii\base\BaseObject->__construct(Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(43): app\models\TodoSearch->search(Array)
+#19 [internal function]: app\controllers\TodoController->actionIndex()
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#23 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#24 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', 'root', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_todo')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%todo}}', 'schema', false)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%todo}}')
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\data\ActiveDataProvider.php(182): yii\db\ActiveRecord->attributes()
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Component.php(180): yii\data\ActiveDataProvider->setSort(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set('sort', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\models\TodoSearch.php(40): yii\base\BaseObject->__construct(Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(43): app\models\TodoSearch->search(Array)
+#19 [internal function]: app\controllers\TodoController->actionIndex()
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#23 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#24 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_todo')
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%todo}}', 'schema', false)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%todo}}')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\data\ActiveDataProvider.php(182): yii\db\ActiveRecord->attributes()
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Component.php(180): yii\data\ActiveDataProvider->setSort(Array)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set('sort', Array)
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\models\TodoSearch.php(40): yii\base\BaseObject->__construct(Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(43): app\models\TodoSearch->search(Array)
+#17 [internal function]: app\controllers\TodoController->actionIndex()
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#22 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????. 
+)
+
+2023-12-22 08:41:33 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55115'
+    'SERVER_SOFTWARE' => 'PHP 7.4.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,az;q=0.6,tr;q=0.5'
+    'REQUEST_TIME_FLOAT' => 1703230893.3461
+    'REQUEST_TIME' => 1703230893
+]
+2023-12-22 08:42:40 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', 'root', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', 'root', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????. 
+)
+
+2023-12-22 08:42:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '3ac50de6-4e8e-424b-b956-549b1aa35804'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703230958.4866
+    'REQUEST_TIME' => 1703230958
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2023-12-22 08:42:49 [::1][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', 'root', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_todo')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%todo}}', 'schema', false)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%todo}}')
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\data\ActiveDataProvider.php(182): yii\db\ActiveRecord->attributes()
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Component.php(180): yii\data\ActiveDataProvider->setSort(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set('sort', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\models\TodoSearch.php(40): yii\base\BaseObject->__construct(Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(43): app\models\TodoSearch->search(Array)
+#19 [internal function]: app\controllers\TodoController->actionIndex()
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#23 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#24 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', 'root', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_todo')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%todo}}', 'schema', false)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%todo}}')
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\data\ActiveDataProvider.php(182): yii\db\ActiveRecord->attributes()
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Component.php(180): yii\data\ActiveDataProvider->setSort(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set('sort', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\models\TodoSearch.php(40): yii\base\BaseObject->__construct(Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(43): app\models\TodoSearch->search(Array)
+#19 [internal function]: app\controllers\TodoController->actionIndex()
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#23 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#24 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_todo')
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%todo}}', 'schema', false)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('{{%todo}}')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\data\ActiveDataProvider.php(182): yii\db\ActiveRecord->attributes()
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Component.php(180): yii\data\ActiveDataProvider->setSort(Array)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\Component->__set('sort', Array)
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\data\ActiveDataProvider), Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\models\TodoSearch.php(40): yii\base\BaseObject->__construct(Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(43): app\models\TodoSearch->search(Array)
+#17 [internal function]: app\controllers\TodoController->actionIndex()
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#22 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????. 
+)
+
+2023-12-22 08:42:47 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55120'
+    'SERVER_SOFTWARE' => 'PHP 7.4.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,az;q=0.6,tr;q=0.5'
+    'REQUEST_TIME_FLOAT' => 1703230967.1597
+    'REQUEST_TIME' => 1703230967
+]
+2023-12-22 08:43:32 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', 'root', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', 'root', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????. 
+)
+
+2023-12-22 08:43:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '3ac50de6-4e8e-424b-b956-549b1aa35804'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703231010.4143
+    'REQUEST_TIME' => 1703231010
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2023-12-22 08:44:53 [-][-][-][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', '', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=mysq...', 'root', '', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????.  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => php_network_getaddresses: getaddrinfo failed: ???? ???? ??????????. 
+)
+
+2023-12-22 08:44:51 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '3ac50de6-4e8e-424b-b956-549b1aa35804'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703231091.5198
+    'REQUEST_TIME' => 1703231091
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2023-12-22 08:46:25 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'nda_db' in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'nda_db' in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'nda_db'
+)
+
+2023-12-22 08:46:24 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '3ac50de6-4e8e-424b-b956-549b1aa35804'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703231184.9551
+    'REQUEST_TIME' => 1703231184
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2023-12-22 08:46:48 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'nda_db' in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=127....', 'root', '', NULL)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'nda_db' in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(328): yii\db\Command->queryAll()
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\mysql\Schema.php(133): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('app_migration')
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#15 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'nda_db'
+)
+
+2023-12-22 08:46:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '3ac50de6-4e8e-424b-b956-549b1aa35804'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703231208.1152
+    'REQUEST_TIME' => 1703231208
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2023-12-22 09:05:31 [-][-][-][error][PDOException] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Transaction.php:133
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Transaction.php(133): PDO->beginTransaction()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Connection.php(798): yii\db\Transaction->begin(NULL)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\db\Migration.php(112): yii\db\Connection->beginTransaction()
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(758): yii\db\Migration->up()
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp('m230829_062013_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#14 {main}
+2023-12-22 08:47:56 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '3ac50de6-4e8e-424b-b956-549b1aa35804'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703231276.3968
+    'REQUEST_TIME' => 1703231276
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2023-12-22 09:07:10 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist:  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php:238
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(555): yii\web\AssetManager->checkBasePathPermission()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(487): yii\web\AssetManager->publishDirectory('C:\\Users\\mehri\\...', Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetBundle.php(181): yii\web\AssetManager->publish('C:\\Users\\mehri\\...', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(265): yii\web\AssetManager->loadBundle('yii\\grid\\GridVi...', Array, true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\View.php(296): yii\web\AssetManager->getBundle('yii\\grid\\GridVi...')
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('yii\\grid\\GridVi...')
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\grid\GridView.php(297): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#9 C:\Users\mehri\OneDrive\Desktop\nda\views\todo\index.php(57): yii\base\Widget::widget(Array)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(347): require('C:\\Users\\mehri\\...')
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Users\\mehri\\...', Array)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Users\\mehri\\...', Array, Object(app\controllers\TodoController))
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TodoController))
+#14 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(47): yii\base\Controller->render('index', Array)
+#15 [internal function]: app\controllers\TodoController->actionIndex()
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2023-12-22 09:07:10 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55458'
+    'SERVER_SOFTWARE' => 'PHP 7.4.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,az;q=0.6,tr;q=0.5'
+    'REQUEST_TIME_FLOAT' => 1703232430.5004
+    'REQUEST_TIME' => 1703232430
+]
+2023-12-22 09:07:53 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist:  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php:238
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(555): yii\web\AssetManager->checkBasePathPermission()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(487): yii\web\AssetManager->publishDirectory('C:\\Users\\mehri\\...', Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetBundle.php(181): yii\web\AssetManager->publish('C:\\Users\\mehri\\...', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(265): yii\web\AssetManager->loadBundle('yii\\grid\\GridVi...', Array, true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\View.php(296): yii\web\AssetManager->getBundle('yii\\grid\\GridVi...')
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('yii\\grid\\GridVi...')
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\grid\GridView.php(297): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#9 C:\Users\mehri\OneDrive\Desktop\nda\views\todo\index.php(57): yii\base\Widget::widget(Array)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(347): require('C:\\Users\\mehri\\...')
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Users\\mehri\\...', Array)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Users\\mehri\\...', Array, Object(app\controllers\TodoController))
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TodoController))
+#14 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(47): yii\base\Controller->render('index', Array)
+#15 [internal function]: app\controllers\TodoController->actionIndex()
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2023-12-22 09:07:53 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55470'
+    'SERVER_SOFTWARE' => 'PHP 7.4.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,az;q=0.6,tr;q=0.5'
+    'REQUEST_TIME_FLOAT' => 1703232473.6917
+    'REQUEST_TIME' => 1703232473
+]
+2023-12-22 09:09:54 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: asset/clear in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('clear', Array)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('clear', Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('asset/clear', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('asset/clear', Array)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "asset/clear". in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('asset/clear', Array)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#3 {main}
+2023-12-22 09:09:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '02772591-3e25-47ad-8c99-aa32d1a93f3d'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703232594.1679
+    'REQUEST_TIME' => 1703232594
+    'argv' => [
+        0 => 'yii'
+        1 => 'asset/clear'
+    ]
+    'argc' => 2
+]
+2023-12-22 09:10:09 [-][-][-][error][yii\console\Exception] yii\console\Exception: Missing required arguments: configFile, bundleFile in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php:244
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('asset', Array)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('asset', Array)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#8 {main}
+2023-12-22 09:10:09 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '02772591-3e25-47ad-8c99-aa32d1a93f3d'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703232609.7534
+    'REQUEST_TIME' => 1703232609
+    'argv' => [
+        0 => 'yii'
+        1 => 'asset'
+    ]
+    'argc' => 2
+]
+2023-12-22 09:26:23 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist:  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php:238
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(555): yii\web\AssetManager->checkBasePathPermission()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(487): yii\web\AssetManager->publishDirectory('C:\\Users\\mehri\\...', Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetBundle.php(181): yii\web\AssetManager->publish('C:\\Users\\mehri\\...', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(265): yii\web\AssetManager->loadBundle('yii\\grid\\GridVi...', Array, true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\View.php(296): yii\web\AssetManager->getBundle('yii\\grid\\GridVi...')
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('yii\\grid\\GridVi...')
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\grid\GridView.php(297): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#9 C:\Users\mehri\OneDrive\Desktop\nda\views\todo\index.php(57): yii\base\Widget::widget(Array)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(347): require('C:\\Users\\mehri\\...')
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Users\\mehri\\...', Array)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Users\\mehri\\...', Array, Object(app\controllers\TodoController))
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TodoController))
+#14 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(47): yii\base\Controller->render('index', Array)
+#15 [internal function]: app\controllers\TodoController->actionIndex()
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2023-12-22 09:26:23 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55508'
+    'SERVER_SOFTWARE' => 'PHP 7.4.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,az;q=0.6,tr;q=0.5'
+    'REQUEST_TIME_FLOAT' => 1703233583.161
+    'REQUEST_TIME' => 1703233583
+]
+2023-12-22 09:44:02 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist:  in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php:238
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(555): yii\web\AssetManager->checkBasePathPermission()
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(487): yii\web\AssetManager->publishDirectory('C:\\Users\\mehri\\...', Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetBundle.php(181): yii\web\AssetManager->publish('C:\\Users\\mehri\\...', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(294): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetManager.php(265): yii\web\AssetManager->loadBundle('yii\\grid\\GridVi...', Array, true)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\View.php(296): yii\web\AssetManager->getBundle('yii\\grid\\GridVi...')
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('yii\\grid\\GridVi...')
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\grid\GridView.php(297): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Widget.php(146): yii\grid\GridView->run()
+#9 C:\Users\mehri\OneDrive\Desktop\nda\views\todo\index.php(57): yii\base\Widget::widget(Array)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(347): require('C:\\Users\\mehri\\...')
+#11 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\Users\\mehri\\...', Array)
+#12 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\Users\\mehri\\...', Array, Object(app\controllers\TodoController))
+#13 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\TodoController))
+#14 C:\Users\mehri\OneDrive\Desktop\nda\controllers\TodoController.php(47): yii\base\Controller->render('index', Array)
+#15 [internal function]: app\controllers\TodoController->actionIndex()
+#16 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#19 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/index', Array)
+#20 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2023-12-22 09:44:01 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55548'
+    'SERVER_SOFTWARE' => 'PHP 7.4.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,az;q=0.6,tr;q=0.5'
+    'REQUEST_TIME_FLOAT' => 1703234641.0712
+    'REQUEST_TIME' => 1703234641
+]
+2023-12-22 09:44:06 [::1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Controller.php:198
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('todo/view', Array)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\mehri\OneDrive\Desktop\nda\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2023-12-22 09:44:06 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55552'
+    'SERVER_SOFTWARE' => 'PHP 7.4.30 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/view'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\mehri\\OneDrive\\Desktop\\nda\\web\\index.php'
+    'PATH_INFO' => '/view'
+    'PHP_SELF' => '/index.php/view'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,az;q=0.6,tr;q=0.5'
+    'REQUEST_TIME_FLOAT' => 1703234646.1416
+    'REQUEST_TIME' => 1703234646
+]
+2023-12-22 09:46:01 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: asset/clear in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('clear', Array)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('clear', Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('asset/clear', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('asset/clear', Array)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "asset/clear". in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('asset/clear', Array)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#3 {main}
+2023-12-22 09:46:01 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '02772591-3e25-47ad-8c99-aa32d1a93f3d'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703234761.1438
+    'REQUEST_TIME' => 1703234761
+    'argv' => [
+        0 => 'yii'
+        1 => 'asset/clear'
+    ]
+    'argc' => 2
+]
+2023-12-22 09:46:33 [-][-][-][error][yii\console\Exception] yii\console\Exception: Missing required arguments: configFile, bundleFile in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php:244
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#3 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('asset', Array)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('asset', Array)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#8 {main}
+2023-12-22 09:46:33 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '02772591-3e25-47ad-8c99-aa32d1a93f3d'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703234793.2712
+    'REQUEST_TIME' => 1703234793
+    'argv' => [
+        0 => 'yii'
+        1 => 'asset'
+    ]
+    'argc' => 2
+]
+2023-12-22 09:47:07 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: require(config/config.php): failed to open stream: No such file or directory in C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\AssetController.php:220
+Stack trace:
+#0 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\AssetController.php(220): yii\base\ErrorHandler->handleError(2, 'require(config/...', 'C:\\Users\\mehri\\...', 220, Array)
+#1 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\AssetController.php(220): require()
+#2 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\controllers\AssetController.php(190): yii\console\controllers\AssetController->loadConfiguration('config/config.p...')
+#3 [internal function]: yii\console\controllers\AssetController->actionCompress('config/config.p...', 'web/assets.php')
+#4 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#7 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction('', Array)
+#8 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('asset', Array)
+#9 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('asset', Array)
+#10 C:\Users\mehri\OneDrive\Desktop\nda\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\Users\mehri\OneDrive\Desktop\nda\yii(20): yii\base\Application->run()
+#12 {main}
+2023-12-22 09:47:07 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\mehri\\AppData\\Roaming'
+    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_8184_ABTURIPFTUNOILVP'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-CDQT5UF'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\mehri'
+    'LOCALAPPDATA' => 'C:\\Users\\mehri\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-CDQT5UF'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\mehri\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\mehri\\OneDrive'
+    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\sqlite3;C:\\xampp\\php;C:\\Users\\mehri\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mehri\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\mehri\\AppData\\Roaming\\npm;C:\\Users\\mehri\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\mehri\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'sqlite3' => 'C:\\Program Files (x86)\\sqlite3\\sqlite3.exe'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\mehri\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-CDQT5UF'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-CDQT5UF'
+    'USERNAME' => 'mehri'
+    'USERPROFILE' => 'C:\\Users\\mehri'
+    'windir' => 'C:\\WINDOWS'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.85.1'
+    'LANG' => 'en_US.UTF-8'
+    'COLORTERM' => 'truecolor'
+    'GIT_ASKPASS' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => '--ms-enable-electron-run-as-node'
+    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\mehri\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-8e75025cef-sock'
+    'VSCODE_INJECTION' => '1'
+    'VSCODE_NONCE' => '02772591-3e25-47ad-8c99-aa32d1a93f3d'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1703234827.5791
+    'REQUEST_TIME' => 1703234827
+    'argv' => [
+        0 => 'yii'
+        1 => 'asset'
+        2 => 'config/config.php'
+        3 => 'web/assets.php'
+    ]
+    'argc' => 4
+]
